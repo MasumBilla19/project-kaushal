@@ -1,0 +1,462 @@
+:root {
+  --primary-50: #f7faff;
+  --primary-100: #cadbff;
+  --primary-200: #a5c3ff;
+  --primary-300: #6c9dff;
+  --primary-400: #447ef2;
+  --primary-500: #255ed1;
+  --primary-600: #1d4ba9;
+  --primary-700: #15316a;
+  --blue-grey: #57697d;
+  --white: #fff;
+  --grey-200: #e7e7e9;
+}
+
+.text-primary-50 {
+  color: var(--primary-50);
+}
+
+.bg-primary-50 {
+  background-color: var(--primary-50);
+}
+
+.text-primary-100 {
+  color: var(--primary-100);
+}
+
+.bg-primary-100 {
+  background-color: var(--primary-100);
+}
+
+.text-primary-200 {
+  color: var(--primary-200);
+}
+
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
+
+.text-primary-300 {
+  color: var(--primary-300);
+}
+
+.bg-primary-300 {
+  background-color: var(--primary-300);
+}
+
+.text-primary-400 {
+  color: var(--primary-400);
+}
+
+.bg-primary-400 {
+  background-color: var(--primary-400);
+}
+
+.text-primary-500 {
+  color: var(--primary-500);
+}
+
+.bg-primary-500 {
+  background-color: var(--primary-500);
+}
+
+.text-primary-600 {
+  color: var(--primary-600);
+}
+
+.bg-primary-600 {
+  background-color: var(--primary-600);
+}
+
+.text-primary-700 {
+  color: var(--primary-700);
+}
+
+.bg-primary-700 {
+  background-color: var(--primary-700);
+}
+
+.text-blue-grey {
+  color: var(--blue-grey);
+}
+
+.bg-blue-grey {
+  background-color: var(--blue-grey);
+}
+
+.text-grey-200 {
+  color: var(--grey-200);
+}
+
+.bg-grey-200 {
+  background-color: var(--grey-200);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+#main_area {
+  /* home section */
+  /* about section */
+  /* style section */
+  /* products section */
+  /* sell section */
+  /* seller section */
+  /* community section */
+}
+#main_area #hero {
+  background: url(../assets/images/home/hero/hero.jpg) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+#main_area #hero .hero_inner {
+  padding: 8rem 0;
+}
+#main_area #hero .hero_inner .hero_title {
+  text-transform: uppercase;
+  /* font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
+  /* font-weight: bold; */
+  /* font-size: 2rem;
+  line-height: 1.5; */
+  color: #262626;
+  margin-bottom: 1.25rem;
+}
+#main_area #hero .hero_inner .hero_text {
+  margin-bottom: 1.5rem;
+  max-width: 31.5rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #hero .hero_inner .hero_img {
+  display: inline-block;
+}
+#main_area #hero .hero_inner .hero_img a {
+  display: inline-block;
+}
+#main_area #hero .hero_inner .hero_img a img {
+  width: 120px;
+  height: 40px;
+}
+#main_area #hero .hero_inner .hero_img a .lastImg {
+  margin-left: 1.25rem;
+}
+#main_area #about {
+  margin-bottom: 4rem;
+}
+#main_area #about .about_inner_left .about_title {
+  margin-bottom: 2rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
+  /* font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #about .about_inner_left .about_text {
+  margin-bottom: 2rem;
+  max-width: 35rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #about .about_inner_left .about_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.125rem;
+  background-color: #262626;
+  color: white;
+  border-color: #262626;
+  border-width: 0.125rem;
+  border-style: solid;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+}
+#main_area #about .about_inner_left .about_btn:hover {
+  background-color: #747474;
+  border-color: #747474;
+}
+#main_area #about .about_inner_right {
+  height: 31.25rem;
+  width: 25rem;
+  background-color: white;
+  position: relative;
+}
+#main_area #about .about_inner_right .main_img {
+  position: relative;
+  height: 100%;
+}
+#main_area #about .about_inner_right .main_img img {
+  display: block;
+  max-height: 31.25rem;
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+}
+#main_area #find_style {
+  margin-bottom: 4rem;
+}
+#main_area #find_style .style_inner_left {
+  position: relative;
+  height: 31.25rem;
+}
+#main_area #find_style .style_inner_left .img_wrapper {
+  position: relative;
+  height: 100%;
+}
+#main_area #find_style .style_inner_left .img_wrapper img {
+  display: block;
+  max-height: 31.25rem;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+  height: auto;
+}
+#main_area #find_style .style_inner_right .style_title {
+  margin-bottom: 2rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #find_style .style_inner_right .style_text {
+  margin-bottom: 2rem;
+  max-width: 35rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #find_style .style_inner_right .style_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.125rem;
+  background-color: #262626;
+  color: white;
+  border-color: #262626;
+  border-width: 0.125rem;
+  border-style: solid;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+}
+#main_area #find_style .style_inner_right .style_btn:hover {
+  background-color: #747474;
+  border-color: #747474;
+}
+#main_area #products {
+  margin-bottom: 5rem;
+}
+#main_area #products .product_title {
+  margin-bottom: 1.5rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #products .products_inner .product_inner {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(6, minmax(0px, 1fr));
+  margin: 0px;
+  padding: 0px;
+}
+#main_area #products .products_inner .product_inner .product_item {
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 1rem;
+}
+#main_area #products .products_inner .product_inner .product_item a {
+  position: relative;
+  text-decoration: none;
+  color: #262626;
+  /* background-color: rgb(215, 215, 215); */
+  background-color: black;
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+#main_area #products .products_inner .product_inner .product_item a:hover .img_wrapper img {
+  color: #262626;
+  background-color: black;
+  opacity: 0.8;
+}
+#main_area #products .products_inner .product_inner .product_item a .img_wrapper {
+  position: absolute;
+  inset: 0px;
+}
+#main_area #products .products_inner .product_inner .product_item a .img_wrapper img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: 0px;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+  height: auto;
+}
+#main_area #products .products_inner .product_inner .product_item .price_wrapper {
+  position: absolute;
+}
+#main_area #products .products_inner .product_inner .product_item .price_wrapper .price {
+  display: inline-block;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #products .products_inner .product_inner .product_item .price_wrapper .delPrice {
+  padding-right: 0.25rem;
+  text-decoration: line-through;
+  display: inline-block;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #747474;
+}
+#main_area #sell {
+  margin-bottom: 4rem;
+}
+#main_area #sell .sell_inner_left .sell_title {
+  margin-bottom: 2rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #sell .sell_inner_left .sell_text {
+  margin-bottom: 2rem;
+  max-width: 35rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  color: #262626;
+}
+#main_area #sell .sell_inner_left .sell_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.125rem;
+  background-color: #262626;
+  color: white;
+  border-color: #262626;
+  border-width: 0.125rem;
+  border-style: solid;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+}
+#main_area #sell .sell_inner_left .sell_btn:hover {
+  background-color: #747474;
+  border-color: #747474;
+}
+#main_area #sell .sell_inner_right {
+  position: relative;
+  height: 31.25rem;
+}
+#main_area #sell .sell_inner_right .img_wrapper {
+  position: relative;
+  height: 100%;
+}
+#main_area #sell .sell_inner_right .img_wrapper img {
+  display: block;
+  max-height: 31.25rem;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+  height: auto;
+}
+#main_area #seller {
+  margin-bottom: 5rem;
+}
+#main_area #seller .seller_inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 1rem;
+}
+#main_area #seller .seller_inner .seller_card {
+  text-decoration: none;
+}
+#main_area #seller .seller_inner .seller_card .seller_img_bg {
+  position: relative;
+  background-color: black;
+  color: #262626;
+}
+#main_area #seller .seller_inner .seller_card .seller_img_bg .seller_img img {
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+  height: auto;
+}
+#main_area #seller .seller_inner .seller_card .seller_img_bg:hover .seller_img img {
+  color: #262626;
+  background-color: black;
+  opacity: 0.8;
+}
+#main_area #seller .seller_inner .seller_card .seller_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#main_area #seller .seller_inner .seller_card .seller_info .seller_logo {
+  background-color: #262626;
+  padding: 0.25rem;
+  display: flex;
+}
+#main_area #seller .seller_inner .seller_card .seller_info .seller_logo img {
+  height: 1.375rem;
+  width: 1.375rem;
+}
+#main_area #seller .seller_inner .seller_card .seller_info .seller_title {
+  color: #262626;
+  text-transform: uppercase;
+  margin-left: 0.375rem;
+  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.5; */
+  margin-bottom: 0;
+}
+#main_area #community {
+  max-width: 80rem;
+  margin: 0px auto 4rem;
+  padding: 0px 1rem;
+}
+#main_area #community .community_text {
+  text-align: center;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #262626;
+}
+
+.hello {
+  color: #447ef2;
+}/*# sourceMappingURL=style.css.map */
