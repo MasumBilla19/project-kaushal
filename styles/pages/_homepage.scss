@@ -1,7 +1,120 @@
 @use "../util" as *;
 
+#topbar {
+    position: sticky;
+    top: 0px;
+    background: $white1;
+    width: 100%;
+    z-index: 3;
+
+    // 
+
+
+    // navbar section 
+    .navbar {
+        background-color: $white1;
+        display: block;
+        margin: 0px auto;
+        padding: 0px 1rem;
+        border-bottom: 0.0625rem solid rgb(238, 238, 238);
+        .nav_menu {
+            list-style: none;
+            margin: 0px 0px -0.0625rem;
+            padding: 0px;
+            display: flex;
+            -webkit-box-pack: start;
+            justify-content: start;
+            .nav_item {
+                position: relative;
+                list-style: none;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                margin: 0px;
+                color: $black-200;
+                button {
+                    padding: 0.75rem 1rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    border: none;
+                    background: none;
+                    font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin: 0px;
+                    color: $black-200;
+                    &:hover {
+                        color: $white1;
+                        background-color: $black-200;
+                    }
+                }
+                .nav_dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    padding-top: 0.1875rem;
+                    left: auto;
+                    background: $white1;
+                    border: 0.0625rem solid rgb(204, 204, 204);
+                    border-radius: 0.125rem;
+                    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.75rem 0.25rem;
+                    .drop_menu {
+                        list-style: none;
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 0.875rem;
+                        min-width: 16.875rem;
+                        .drop_item {
+                            border-bottom: 0.0625rem solid rgb(238, 238, 238);
+                            position: relative;
+                            list-style: none;
+                            font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                            font-weight: normal;
+                            font-size: 0.875rem;
+                            line-height: 1.5;
+                            margin: 0px;
+                            color: rgb(38, 38, 38);
+                            .drop_link {
+                                border-top-left-radius: 0.125rem;
+                                border-top-right-radius: 0.125rem;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: calc(100% + 2px);
+                                padding: 0.75rem 1rem;
+                                margin: -0.0625rem;
+                                text-decoration: none;
+                                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                                font-weight: normal;
+                                font-size: 0.875rem;
+                                line-height: 1.5;
+                                color: rgb(38, 38, 38);
+                                &:hover {
+                                    color: rgb(238, 238, 238);
+                                    background-color: $black-200;
+                                }
+                            }
+                            &:last-of-type {
+                                border-bottom: $black-200;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .nav_dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 #main_area {
-    /* home section */
+    // home section 
     #hero {
         background: url(../assets/images/home/hero/hero.jpg) no-repeat;
         object-fit: cover;
@@ -15,21 +128,21 @@
             padding: 8rem 0;
             .hero_title {
                 text-transform: uppercase;
-                /* font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
-                /* font-weight: bold; */
-                /* font-size: 2rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 1.5; 
+                color: $black-200;
                 margin-bottom: 1.25rem;
             }
             .hero_text {
                 margin-bottom: 1.5rem;
                 max-width: 31.5rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: normal;
                 font-size: 0.875rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .hero_img {
                 display: inline-block;
@@ -48,26 +161,26 @@
         }
     }
 
-    /* about section */
+    // about section 
     #about {
         margin-bottom: 4rem;
         .about_inner_left { 
             .about_title {
                 margin-bottom: 2rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
-                /* font-weight: bold;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+                font-weight: bold;
                 font-size: 1.125rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .about_text {
                 margin-bottom: 2rem;
                 max-width: 35rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: normal;
                 font-size: 0.875rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .about_btn {
                 display: flex;
@@ -75,16 +188,16 @@
                 justify-content: center;
                 padding: 0.625rem 0.875rem;
                 border-radius: 0.125rem;
-                background-color: rgb(38, 38, 38);
-                color: rgb(255, 255, 255);
-                border-color: rgb(38, 38, 38);
+                background-color: $black-200;
+                color: $white1;
+                border-color: $black-200;
                 border-width: 0.125rem;
                 border-style: solid;
                 text-decoration: none;
                 transition: all 0.2s ease 0s;
                 &:hover {
-                    background-color: rgb(116, 116, 116);
-                    border-color: rgb(116, 116, 116);
+                    background-color: $gray-200;
+                    border-color: $gray-200;
                 }
             }
         }
@@ -92,7 +205,7 @@
         .about_inner_right {
             height: 31.25rem;
             width: 25rem;
-            background-color: rgb(255, 255, 255);
+            background-color: $white1;
             position: relative;
             .main_img {
                 position: relative;
@@ -109,7 +222,7 @@
         }
     }
 
-    /* style section */
+    // style section 
     #find_style {
         margin-bottom: 4rem;
         .style_inner_left {
@@ -132,20 +245,20 @@
         .style_inner_right {
             .style_title {
                 margin-bottom: 2rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 1.125rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .style_text {
                 margin-bottom: 2rem;
                 max-width: 35rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: normal;
                 font-size: 0.875rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .style_btn {
                 display: flex;
@@ -153,31 +266,31 @@
                 justify-content: center;
                 padding: 0.625rem 0.875rem;
                 border-radius: 0.125rem;
-                background-color: rgb(38, 38, 38);
-                color: rgb(255, 255, 255);
-                border-color: rgb(38, 38, 38);
+                background-color: $black-200;
+                color: $white1;
+                border-color: $black-200;
                 border-width: 0.125rem;
                 border-style: solid;
                 text-decoration: none;
                 transition: all 0.2s ease 0s;
                 &:hover {
-                    background-color: rgb(116, 116, 116);
-                    border-color: rgb(116, 116, 116);
+                    background-color: $gray-200;
+                    border-color: $gray-200;
                 }
             }
         }
     }
 
-    /* products section */
+    // products section 
     #products {
         margin-bottom: 5rem;
         .product_title {
             margin-bottom: 1.5rem;
-            /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             font-weight: bold;
             font-size: 1.125rem;
-            line-height: 1.5; */
-            color: rgb(38, 38, 38);
+            line-height: 1.5; 
+            color: $black-200;
         }
 
         .products_inner {
@@ -194,9 +307,9 @@
                     a {
                         position: relative;
                         text-decoration: none;
-                        color: rgb(38, 38, 38);
-                        /* background-color: rgb(215, 215, 215); */
-                        background-color: rgb(0, 0, 0);
+                        color: $black-200;
+                        background-color: rgb(215, 215, 215); 
+                        background-color: $black1;
                         display: block;
                         padding-bottom: 100%;
                         width: 100%;
@@ -204,8 +317,8 @@
                         &:hover { 
                             .img_wrapper {
                                  img {
-                                    color: rgb(38, 38, 38);
-                                    background-color: rgb(0, 0, 0);
+                                    color: $black-200;
+                                    background-color: $black1;
                                     opacity: .8;
                                 }
                             }
@@ -230,21 +343,21 @@
                         position: absolute;
                         .price {
                             display: inline-block;
-                            /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                            font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                             font-weight: bold;
                             font-size: 0.875rem;
-                            line-height: 1.5; */
-                            color: rgb(38, 38, 38);
+                            line-height: 1.5; 
+                            color: $black-200;
                         }
                         .delPrice {
                             padding-right: 0.25rem;
                             text-decoration: line-through;
                             display: inline-block;
-                            /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                            font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                             font-weight: bold;
                             font-size: 0.875rem;
-                            line-height: 1.5; */
-                            color: rgb(116, 116, 116);
+                            line-height: 1.5; 
+                            color: $gray-200;
                         }
                     }
                 }
@@ -252,26 +365,26 @@
         }
     }
 
-    /* sell section */
+    // sell section 
     #sell {
         margin-bottom: 4rem;
         .sell_inner_left {
             .sell_title {
                 margin-bottom: 2rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: bold;
                 font-size: 1.125rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .sell_text {
                 margin-bottom: 2rem;
                 max-width: 35rem;
-                /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                 font-weight: normal;
                 font-size: 0.875rem;
-                line-height: 1.5; */
-                color: rgb(38, 38, 38);
+                line-height: 1.5; 
+                color: $black-200;
             }
             .sell_btn {
                 display: flex;
@@ -279,16 +392,16 @@
                 justify-content: center;
                 padding: 0.625rem 0.875rem;
                 border-radius: 0.125rem;
-                background-color: rgb(38, 38, 38);
-                color: rgb(255, 255, 255);
-                border-color: rgb(38, 38, 38);
+                background-color: $black-200;
+                color: $white1;
+                border-color: $black-200;
                 border-width: 0.125rem;
                 border-style: solid;
                 text-decoration: none;
                 transition: all 0.2s ease 0s;
                 &:hover {
-                    background-color: rgb(116, 116, 116);
-                    border-color: rgb(116, 116, 116);
+                    background-color: $gray-200;
+                    border-color: $gray-200;
                 }
             }
         }
@@ -310,7 +423,7 @@
         }
     }
 
-    /* seller section */
+    // seller section 
     #seller {
         margin-bottom: 5rem;
         .seller_inner {
@@ -321,8 +434,8 @@
                 text-decoration: none;
                 .seller_img_bg {
                     position: relative;
-                    background-color: rgb(0, 0, 0);
-                    color: rgb(38, 38, 38);
+                    background-color: $black1;
+                    color: $black-200;
                     .seller_img {
                         img {
                             opacity: 1;
@@ -334,8 +447,8 @@
                     &:hover {
                         .seller_img {
                             img {
-                            color: rgb(38, 38, 38);
-                            background-color: rgb(0, 0, 0);
+                            color: $black-200;
+                            background-color: $black1;
                             opacity: .8;
                             }
                         }
@@ -347,7 +460,7 @@
                     flex-direction: row;
                     align-items: center;
                     .seller_logo {
-                        background-color: rgb(38, 38, 38);
+                        background-color: $black-200;
                         padding: 0.25rem;
                         display: flex;
                         img {
@@ -356,13 +469,13 @@
                         }
                     }
                     .seller_title {
-                        color: rgb(38, 38, 38);
+                        color: $black-200;
                         text-transform: uppercase;
                         margin-left: 0.375rem;
-                        /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                        font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
                         font-weight: bold;
                         font-size: 0.875rem;
-                        line-height: 1.5; */
+                        line-height: 1.5; 
                         margin-bottom: 0;
                     }
                 }
@@ -370,7 +483,7 @@
         }
     }
 
-    /* community section */
+    // community section 
     #community {
         max-width: 80rem;
         margin: 0px auto 4rem;
@@ -381,7 +494,7 @@
             font-weight: bold;
             font-size: 1.5rem;
             line-height: 1.5;
-            color: rgb(38, 38, 38);
+            color: $black-200;
         }
     }
 }
