@@ -1,114 +1,151 @@
+@font-face {
+  font-family: Arial Black;
+  src: url(arial-black.ttf);
+}
 :root {
-  --primary-50: #f7faff;
-  --primary-100: #cadbff;
-  --primary-200: #a5c3ff;
-  --primary-300: #6c9dff;
-  --primary-400: #447ef2;
-  --primary-500: #255ed1;
-  --primary-600: #1d4ba9;
-  --primary-700: #15316a;
-  --blue-grey: #57697d;
-  --white: #fff;
-  --grey-200: #e7e7e9;
+  --white1: white;
+  --black1: black;
+  --black-200: #262626;
+  --gray-200: #747474;
 }
 
-.text-primary-50 {
-  color: var(--primary-50);
+.text-white1 {
+  color: var(--white1);
 }
 
-.bg-primary-50 {
-  background-color: var(--primary-50);
+.bg-white1 {
+  background-color: var(--white1);
 }
 
-.text-primary-100 {
-  color: var(--primary-100);
+.text-black1 {
+  color: var(--black1);
 }
 
-.bg-primary-100 {
-  background-color: var(--primary-100);
+.bg-black1 {
+  background-color: var(--black1);
 }
 
-.text-primary-200 {
-  color: var(--primary-200);
+.text-black-200 {
+  color: var(--black-200);
 }
 
-.bg-primary-200 {
-  background-color: var(--primary-200);
+.bg-black-200 {
+  background-color: var(--black-200);
 }
 
-.text-primary-300 {
-  color: var(--primary-300);
+.text-gray-200 {
+  color: var(--gray-200);
 }
 
-.bg-primary-300 {
-  background-color: var(--primary-300);
+.bg-gray-200 {
+  background-color: var(--gray-200);
 }
 
-.text-primary-400 {
-  color: var(--primary-400);
+#topbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background: white;
+  width: 100%;
+  z-index: 3;
+}
+#topbar .navbar {
+  background-color: white;
+  display: block;
+  margin: 0px auto;
+  padding: 0px 1rem;
+  border-bottom: 0.0625rem solid #eeeeee;
+}
+#topbar .navbar .nav_menu {
+  list-style: none;
+  margin: 0px 0px -0.0625rem;
+  padding: 0px;
+  display: flex;
+  justify-content: start;
+}
+#topbar .navbar .nav_menu .nav_item {
+  position: relative;
+  list-style: none;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0px;
+  color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item button {
+  padding: 0.75rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0px;
+  color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item button:hover {
+  color: white;
+  background-color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding-top: 0.1875rem;
+  left: auto;
+  background: white;
+  border: 0.0625rem solid #cccccc;
+  border-radius: 0.125rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0.75rem 0.25rem;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown .drop_menu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.875rem;
+  min-width: 16.875rem;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown .drop_menu .drop_item {
+  border-bottom: 0.0625rem solid #eeeeee;
+  position: relative;
+  list-style: none;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0px;
+  color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown .drop_menu .drop_item .drop_link {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% + 2px);
+  padding: 0.75rem 1rem;
+  margin: -0.0625rem;
+  text-decoration: none;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown .drop_menu .drop_item .drop_link:hover {
+  color: #eeeeee;
+  background-color: #262626;
+}
+#topbar .navbar .nav_menu .nav_item .nav_dropdown .drop_menu .drop_item:last-of-type {
+  border-bottom: #262626;
+}
+#topbar .navbar .nav_menu .nav_item:hover .nav_dropdown {
+  display: block;
 }
 
-.bg-primary-400 {
-  background-color: var(--primary-400);
-}
-
-.text-primary-500 {
-  color: var(--primary-500);
-}
-
-.bg-primary-500 {
-  background-color: var(--primary-500);
-}
-
-.text-primary-600 {
-  color: var(--primary-600);
-}
-
-.bg-primary-600 {
-  background-color: var(--primary-600);
-}
-
-.text-primary-700 {
-  color: var(--primary-700);
-}
-
-.bg-primary-700 {
-  background-color: var(--primary-700);
-}
-
-.text-blue-grey {
-  color: var(--blue-grey);
-}
-
-.bg-blue-grey {
-  background-color: var(--blue-grey);
-}
-
-.text-grey-200 {
-  color: var(--grey-200);
-}
-
-.bg-grey-200 {
-  background-color: var(--grey-200);
-}
-
-.text-white {
-  color: var(--white);
-}
-
-.bg-white {
-  background-color: var(--white);
-}
-
-#main_area {
-  /* home section */
-  /* about section */
-  /* style section */
-  /* products section */
-  /* sell section */
-  /* seller section */
-  /* community section */
-}
 #main_area #hero {
   background: url(../assets/images/home/hero/hero.jpg) no-repeat;
   -o-object-fit: cover;
@@ -124,20 +161,20 @@
 }
 #main_area #hero .hero_inner .hero_title {
   text-transform: uppercase;
-  /* font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
-  /* font-weight: bold; */
-  /* font-size: 2rem;
-  line-height: 1.5; */
+  font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
   color: #262626;
   margin-bottom: 1.25rem;
 }
 #main_area #hero .hero_inner .hero_text {
   margin-bottom: 1.5rem;
   max-width: 31.5rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #hero .hero_inner .hero_img {
@@ -158,19 +195,19 @@
 }
 #main_area #about .about_inner_left .about_title {
   margin-bottom: 2rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; */
-  /* font-weight: bold;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #about .about_inner_left .about_text {
   margin-bottom: 2rem;
   max-width: 35rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #about .about_inner_left .about_btn {
@@ -230,19 +267,19 @@
 }
 #main_area #find_style .style_inner_right .style_title {
   margin-bottom: 2rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #find_style .style_inner_right .style_text {
   margin-bottom: 2rem;
   max-width: 35rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #find_style .style_inner_right .style_btn {
@@ -268,10 +305,10 @@
 }
 #main_area #products .product_title {
   margin-bottom: 1.5rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #products .products_inner .product_inner {
@@ -290,7 +327,7 @@
   position: relative;
   text-decoration: none;
   color: #262626;
-  /* background-color: rgb(215, 215, 215); */
+  background-color: #d7d7d7;
   background-color: black;
   display: block;
   padding-bottom: 100%;
@@ -322,20 +359,20 @@
 }
 #main_area #products .products_inner .product_inner .product_item .price_wrapper .price {
   display: inline-block;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #products .products_inner .product_inner .product_item .price_wrapper .delPrice {
   padding-right: 0.25rem;
   text-decoration: line-through;
   display: inline-block;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #747474;
 }
 #main_area #sell {
@@ -343,19 +380,19 @@
 }
 #main_area #sell .sell_inner_left .sell_title {
   margin-bottom: 2rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #sell .sell_inner_left .sell_text {
   margin-bottom: 2rem;
   max-width: 35rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   color: #262626;
 }
 #main_area #sell .sell_inner_left .sell_btn {
@@ -437,10 +474,10 @@
   color: #262626;
   text-transform: uppercase;
   margin-left: 0.375rem;
-  /* font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 0.875rem;
-  line-height: 1.5; */
+  line-height: 1.5;
   margin-bottom: 0;
 }
 #main_area #community {
@@ -455,8 +492,4 @@
   font-size: 1.5rem;
   line-height: 1.5;
   color: #262626;
-}
-
-.hello {
-  color: #447ef2;
 }/*# sourceMappingURL=style.css.map */
