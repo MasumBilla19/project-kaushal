@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sign-in .the-form {
+  max-width: 420px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .sign-in .the-form {
+    width: 100%;
+  }
+}
+
+.sign-in .the-form .title h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sign-in .the-form form input {
+  width: 100%;
+  font-size: 15px;
+  padding: 6px 8px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.sign-in .the-form form input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.sign-in .the-form form input:-ms-input-placeholder {
+  color: #000;
+}
+
+.sign-in .the-form form input::-ms-input-placeholder {
+  color: #000;
+}
+
+.sign-in .the-form form input::placeholder {
+  color: #000;
+}
+
+.sign-in .the-form form input[type="submit"] {
+  background: #262626;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sign-in .the-form form .forgot {
+  display: block;
+  text-align: right;
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.sign-in .the-form .facebook {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #3b5998;
+  border: none;
+  padding: 6px;
+}
+
+.sign-in .the-form .sign-up {
+  padding: 6px 2px 7px 2px;
+  color: #262626;
+  background: none;
+  border: 2px solid #262626;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=signin.css.map */

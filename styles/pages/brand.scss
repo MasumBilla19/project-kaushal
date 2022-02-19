@@ -12,21 +12,28 @@ section.brand-section{
             margin-right: 30px;
             width: 96px;
             height: 96px;
-            border-radius: 50%;
-            overflow: hidden;
             position: relative;
             img{
                 width: 100%;
+                border-radius: 50%;
+                z-index: .50;
             }
-            span{
+            .sign-icon{
                 position: absolute;
-                color: $blue;
-                bottom: 0;
-                right: 0;
-                z-index: 50;
+                bottom: 0px;
+                right: 2px;
+                .iconify{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    color: $blue;
+                }
             }
         }
         .brand-profile-info{
+            margin-bottom: 25px;
             .name{
                 h2.brand-name{
                     font-size: 24px;
@@ -41,12 +48,13 @@ section.brand-section{
                 }
             }
             .reviews{
+                margin-bottom: 14px;
                 .stars{
                     margin-right: 5px;
-                    color: orangered;
+                    color: #FF2300;
                     .iconify{
                         margin-left: -5px;
-                        font-size: 22px;
+                        font-size: 20px;
                     }
                 }
                 .number{
@@ -62,12 +70,58 @@ section.brand-section{
             }
             .basic-info{
                 .sold{
-                    margin-right: 12px;
+                    margin-right: 14px;
                 }
                 .icon{
                     color: $blue;
                 }
             }
+        }
+        .follow-line{
+            align-items: flex-end;
+            margin-bottom: 10px;
+            .follwers{
+                margin-right: 28px;
+            }
+            .following{
+                margin-right: 60px;
+            }
+            .message{
+                margin-right: 15px;
+                .iconify{
+                    font-size: 28px;
+                }
+            }
+            .follow-btn{
+                button{
+                    background: $blue;
+                    border: none;
+                    font-weight: 700;
+                    font-size: 17px;
+                    color: #fff;
+                    padding: 2px 15px 2px 15px;
+                }
+            }
+        }
+        .status{
+            margin-bottom: 50px;
+            p{
+                margin-bottom: 0;
+            }
+            .website{
+                color: rgb(232, 31, 0);
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .all-likes{
+        .all{
+            margin-right: 10px;
+        }
+        .active{
+            font-weight: 700;
         }
     }
     .products{
