@@ -8,7 +8,6 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/pages/all-product.css">
-    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     
@@ -589,7 +588,7 @@
                         <div class="dropdown_category">
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper active">
+                                    <div onclick="category()" class="dropdown_single_category_wrapper active">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1 active">Category</div>
                                             <div class="dropdown_info2">Category</div>
@@ -598,12 +597,55 @@
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
                                     </div>
                                     
+                                    <div class="dropdown_Inner_area" id="categoryBtn">
+                                        <div class="dropdown_menu_list">
+                                            <div class="dropdown_Inner_category">
+                                                <div class="dropdown_search">
+                                                    <svg class="serch_icon" viewBox="0 0 16 16"><title>Search</title><path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.504 12.874c2.966 0 5.37-2.404 5.37-5.37s-2.404-5.37-5.37-5.37-5.37 2.404-5.37 5.37 2.404 5.37 5.37 5.37zm6.363.993l-2.522-2.522"></path></svg>
+                                                    
+                                                    <input type="text" placeholder="Search for categories" class="serch_input">
+                                                </div>
+
+                                                <div class="dropdown_details">
+                                                    <details class="dropdown_single_item">
+                                                        <summary class="dropdown_single_item_inner">
+                                                            <div class="dropdown_single_item_wrapper">
+                                                                <div class="dropdown_item_text">Mens</div>
+                                                                
+                                                                <svg viewBox="0 0 20 20" class="dropdown_down_arrow"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
+                                                            </div>
+                                                        </summary>
+                                                    </details>
+
+                                                    <details class="dropdown_single_item">
+                                                        <summary class="dropdown_single_item_inner">
+                                                            <div class="dropdown_single_item_wrapper">
+                                                                <div class="dropdown_item_text">Womens</div>
+                                                                
+                                                                <svg viewBox="0 0 20 20" class="dropdown_down_arrow"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
+                                                            </div>
+                                                        </summary>
+                                                    </details>
+
+                                                    <details class="dropdown_single_item">
+                                                        <summary class="dropdown_single_item_inner">
+                                                            <div class="dropdown_single_item_wrapper">
+                                                                <div class="dropdown_item_text">Others</div>
+                                                                
+                                                                <svg viewBox="0 0 20 20" class="dropdown_down_arrow"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
+                                                            </div>
+                                                        </summary>
+                                                    </details>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper">
+                                    <div onclick="subCategory()" class="dropdown_single_category_wrapper">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1">Subcategory</div>
                                             <div class="dropdown_info2">Subcategory</div>
@@ -611,12 +653,62 @@
 
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
                                     </div>
+
+                                    <div class="dropdown_sub_area" id="subCategoryBtn">
+                                        <div class="dropdown_sub_inner">
+                                            <div class="dropdown_sub_search">
+                                                <svg class="serch_sub_icon" viewBox="0 0 16 16"><title>Search</title><path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.504 12.874c2.966 0 5.37-2.404 5.37-5.37s-2.404-5.37-5.37-5.37-5.37 2.404-5.37 5.37 2.404 5.37 5.37 5.37zm6.363.993l-2.522-2.522"></path></svg>
+                                                
+                                                <input type="text" placeholder="Search for categories" class="serch_sub_input">
+                                            </div>
+
+                                            <div class="dropdown_sub_item_wrapper">
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Collectibles</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Mixed Media</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Prints</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Drawings & Illustrations</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Paintings</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Photography</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Sculptures</div>
+                                                </div>
+
+                                                <div class="dropdown_sub_item">
+                                                    <div class="dropdown_sub_item_text">Other</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown_sub_button">
+                                                <button type="button" class="sub_button_info">
+                                                    <span class="button_text">Reset</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper">
+                                    <div onclick="brand()" class="dropdown_single_category_wrapper">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1">Brand</div>
                                             <div class="dropdown_info2">Brand</div>
@@ -624,12 +716,84 @@
 
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
                                     </div>
+
+                                    <div class="dropdown_brand_area" id="brandBtn">
+                                        <div class="dropdown_brand_inner">
+                                            <div class="dropdown_brand_search">
+                                                <svg class="serch_brand_icon" viewBox="0 0 16 16"><title>Search</title><path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.504 12.874c2.966 0 5.37-2.404 5.37-5.37s-2.404-5.37-5.37-5.37-5.37 2.404-5.37 5.37 2.404 5.37 5.37 5.37zm6.363.993l-2.522-2.522"></path></svg>
+                                                
+                                                <input type="text" placeholder="Search for categories" class="serch_brand_input">
+                                            </div>
+
+                                            <div class="dropdown_brand_item_wrapper_group">
+                                                <div class="dropdown_brand_item_wrapper_group_info">
+                                                    <div class="dropdown_brand_item_wrapper_group1_title">Suggested</div>
+
+                                                    <div class="dropdown_brand_item_wrapper">
+                                                        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">Supreme</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">& Other Stories</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">Unbranded</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">Pokémon</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">Funko</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown_brand_item_wrapper_group_info">
+                                                    <div class="dropdown_brand_item_wrapper_group1_title">A-Z</div>
+
+                                                    <div class="dropdown_brand_item_wrapper">
+                                                        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">& Other Stories</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">O32c</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">11 Degrees</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">17London</div>
+                                                        </div>
+        
+                                                        <div class="dropdown_brand_item">
+                                                            <div class="dropdown_brand_item_text">1822 Denim</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="dropdown_brand_button">
+                                                <button type="button" class="brand_button_info">
+                                                    <span class="button_text">Reset</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper">
+                                    <div onclick="price()" class="dropdown_single_category_wrapper">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1">Price</div>
                                             <div class="dropdown_info2">Price</div>
@@ -637,12 +801,34 @@
 
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
                                     </div>
+
+                                    <div class="dropdown_price_area" id="priceBtn">
+                                        <div class="dropdown_price_inner">
+                                            <div class="dropdown_price_inner_wrapper">
+                                                <div class="price_title">
+                                                    <label for="" class="price_min">Min.</label>
+                                                
+                                                    <label for="" class="price_max">Max.</label>
+                                                </div>
+                                            
+                                                <input type="text" class="price_input" placeholder="£1">
+                                            
+                                                <input type="text" class="price_any" placeholder="Any">
+                                            
+                                                <div class="price_button_wrapper">
+                                                    <div class="reset_btn"><span class="reset_btn_text">Reset</span></div>
+                                                    
+                                                    <div class="done_btn"><span class="done_btn_text">Done</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper">
+                                    <div onclick="color()" class="dropdown_single_category_wrapper">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1">Colour</div>
                                             <div class="dropdown_info2">Colour</div>
@@ -650,18 +836,131 @@
 
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
                                     </div>
+
+                                    <div class="dropdown_color_area" id="colorBtn">
+                                        <div class="dropdown_color_inner">
+                                            <div class="dropdown_color_inner_wrapper">
+                                                <div class="color_Details">
+                                                    <div class="color_item">
+                                                        <div class="color_item_inner">
+                                                            <div>
+                                                                <div class="color_info1"></div>
+                                                            </div>
+                                                            <div>Black</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="color_item">
+                                                        <div class="color_item_inner">
+                                                            <div>
+                                                                <div class="color_info2"></div>
+                                                            </div>
+                                                            <div>Gray</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="color_item">
+                                                        <div class="color_item_inner">
+                                                            <div>
+                                                                <div class="color_info3"></div>
+                                                            </div>
+                                                            <div>White</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="color_item">
+                                                        <div class="color_item_inner">
+                                                            <div>
+                                                                <div class="color_info4"></div>
+                                                            </div>
+                                                            <div>Brown</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="color_item">
+                                                        <div class="color_item_inner">
+                                                            <div>
+                                                                <div class="color_info5"></div>
+                                                            </div>
+                                                            <div>Tan</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown_color_button">
+                                                    <button type="button" class="color_button_info">
+                                                        <span class="button_text">Reset</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="category_item">
                                 <div class="dropdown_single_category">
-                                    <div class="dropdown_single_category_wrapper">
+                                    <div onclick="condition()" class="dropdown_single_category_wrapper">
                                         <div class="dropdown_info">
                                             <div class="dropdown_info1">Condition</div>
                                             <div class="dropdown_info2">Condition</div>
                                         </div>
 
                                         <svg viewBox="0 0 20 20" class="Optionstyles__StyledIconChevron-sc-__sc-1o0frlw-10 bhPDiK"><path stroke="currentColor" stroke-width="1" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" d="M4.137 7.137a.469.469 0 0 1 .664 0l5.001 5.003 5.001-5.003a.469.469 0 0 1 .664.664l-5.333 5.334a.47.47 0 0 1-.664 0L4.137 7.8a.469.469 0 0 1 0-.664z"></path></svg>
+                                    </div>
+
+                                    <div class="dropdown_condition_area" id="conditionBtn">
+                                        <div class="dropdown_condition_inner">
+                                            <div class="dropdown_condition_inner_wrapper">
+                                                <div class="condition_details">
+                                                    <div class="condition_item">
+                                                        <div class="condition_item_inner">
+                                                            <div class="condition_header_wrapper">
+                                                                <h2 class="condition_title">Brand new</h2>
+                                                            </div>
+
+                                                            <div class="condition_text">Unused with original packaging or tags</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="condition_item">
+                                                        <div class="condition_item_inner">
+                                                            <div class="condition_header_wrapper">
+                                                                <h2 class="condition_title">Brand new</h2>
+                                                            </div>
+
+                                                            <div class="condition_text">Unused with original packaging or tags</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="condition_item">
+                                                        <div class="condition_item_inner">
+                                                            <div class="condition_header_wrapper">
+                                                                <h2 class="condition_title">Brand new</h2>
+                                                            </div>
+
+                                                            <div class="condition_text">Unused with original packaging or tags</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="condition_item">
+                                                        <div class="condition_item_inner">
+                                                            <div class="condition_header_wrapper">
+                                                                <h2 class="condition_title">Brand new</h2>
+                                                            </div>
+
+                                                            <div class="condition_text">Unused with original packaging or tags</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dropdown_condition_button">
+                                                    <button type="button" class="condition_button_info">
+                                                        <span class="button_text">Reset</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -693,6 +992,34 @@
                                     <p class="check_text">On Sale</p>
                                 </label>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_small_area">
+                    <div class="filter_small_inner">
+                        <div class="filter_small_inner_wrapper">
+                            <button class="filter_small_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="MobileFiltersstyles__IconFilter-sc-__sc-14qri98-12 bLtbKs"><title></title><defs><filter id="nyhqpms1fa"><feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g><g><g filter="url(#nyhqpms1fa)" transform="translate(-247 -958) translate(231 944) translate(16 12)"><g><path stroke="currentColor" stroke-width="1.5" d="M7.333 5.667H18m-16 0h2.667M5.167 3h1.666c.276 0 .5.224.5.5v4.333c0 .276-.224.5-.5.5H5.167c-.276 0-.5-.224-.5-.5V3.5c0-.276.224-.5.5-.5zm7.5 11.333H2m16 0h-2.667m-.5-2.666h-1.666c-.276 0-.5.224-.5.5V16.5c0 .276.224.5.5.5h1.666c.276 0 .5-.224.5-.5v-4.333c0-.276-.224-.5-.5-.5z" transform="translate(0 2)"></path></g></g></g></g></g></svg>
+                            
+                                filter
+
+                                <span>1</span>
+                            </button>
+
+                            <!-- <div class="filter_nav_menu_area">
+                                <div class="filter_nav_header">
+                                    <button class="back_btn">
+                                        <svg class="MobileFiltersstyles__StyledIconArrowLeft-sc-__sc-14qri98-2 ikXpck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" data-testid="iconArrowLeft"><title data-testid="iconArrowLeft__title">Back</title><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M0 6.75L12 6.75M12 6.75L5.953.703M12 6.75L5.953 12.797" transform="matrix(-1 0 0 1 13 .25)"></path></g></svg>
+                                    </button>
+
+                                    <h1 class="filter_nav_title">Brand</h1>
+                                
+                                    <button class="button close_btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="MobileFiltersstyles__StyledIconClose-sc-__sc-14qri98-5 ciZduX"><title>Close filters</title><path d="M7.49586652,6.73356737 L13.4044936,0.824940276 C13.6160283,0.620633208 13.9522734,0.623555086 14.1602257,0.831507383 C14.3681779,1.03945968 14.3710998,1.37570471 14.1667928,1.58723943 L8.25816567,7.49586652 L14.2940223,13.5317232 C14.4983294,13.7432579 14.4954075,14.0795029 14.2874552,14.2874552 C14.0795029,14.4954075 13.7432579,14.4983294 13.5317232,14.2940223 L7.49586652,8.25816567 L1.58723943,14.1667928 C1.45188309,14.3069375 1.25144078,14.3631428 1.06295265,14.3138061 C0.874464514,14.2644693 0.727263707,14.1172685 0.677926972,13.9287804 C0.628590237,13.7402923 0.68479552,13.5398499 0.824940276,13.4044936 L6.73356737,7.49586652 L0.824940276,1.58723943 C0.68479552,1.45188309 0.628590237,1.25144078 0.677926972,1.06295265 C0.727263707,0.874464514 0.874464514,0.727263707 1.06295265,0.677926972 C1.25144078,0.628590237 1.45188309,0.68479552 1.58723943,0.824940276 L7.49586652,6.73356737 Z"></path></svg>
+                                    </button>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1107,6 +1434,40 @@
 
     <!-- iconify -->
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+    <!-- code -->
+    <script>
+        function category() {
+            const toggle = document.getElementById("categoryBtn").classList.toggle("categoryShow");
+        }
+        function subCategory() {
+            const toggle = document.getElementById("subCategoryBtn").classList.toggle("subCategoryShow");
+        }
+        function brand() {
+            const toggle = document.getElementById("brandBtn").classList.toggle("brandShow");
+        }
+        function price() {
+            const toggle = document.getElementById("priceBtn").classList.toggle("priceShow");
+        }
+        function color() {
+            const toggle = document.getElementById("colorBtn").classList.toggle("colorShow");
+        }
+        function condition() {
+            const toggle = document.getElementById("conditionBtn").classList.toggle("conditionShow");
+        }
+        // window.onclick = function(event) {
+        //     if (!event.target.matches('.dropdown_single_category_wrapper')) {
+        //         var dropdowns = document.getElementsByClassName("dropdown_Inner_area");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (openDropdown.classList.contains('categoryShow')) {
+        //                 openDropdown.classList.remove('categoryShow');
+        //             }   
+        //         }
+        //     }
+        // }
+    </script>
 
 </body>
 </html>
