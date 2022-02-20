@@ -115,4 +115,177 @@ section.all-products .products .product .price b.old-price {
   font-size: 13px;
   opacity: 0.5;
 }
+
+section.all-products .filter {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+section.all-products .filter .filter_inner {
+  display: block;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 80%;
+  margin-bottom: 0px;
+}
+
+section.all-products .filter .filter_inner .dropdown_category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item {
+  margin-right: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper {
+  padding: 0px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: white;
+  cursor: pointer;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper .dropdown_info {
+  position: relative;
+  margin-right: 5px;
+  background: white;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper .dropdown_info .dropdown_info1 {
+  visibility: hidden;
+  font-weight: bold;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper .dropdown_info .dropdown_info2 {
+  position: absolute;
+  inset: 0px;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper svg {
+  height: 1.25rem;
+  stroke-width: 0;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .dropdown_single_category_wrapper:hover {
+  color: #666666;
+}
+
+section.all-products .filter .filter_inner .dropdown_category .category_item .dropdown_single_category .active {
+  font-weight: bold;
+}
+
+section.all-products .filter .filter_inner .check_category {
+  margin-right: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper .shopping_chack {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5rem;
+  top: 50%;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper .check_input {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper .check_input .check_input_inner {
+  color: white;
+  stroke: white;
+  width: 0.875rem;
+  height: 0.9375rem;
+  min-width: 0.875rem;
+  min-height: 0.9375rem;
+  padding: 0.125rem 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper .check_input .check_input_inner svg {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+section.all-products .filter .filter_inner .check_category .check_category_wrapper .check_text {
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.5rem;
+  color: #262626;
+  font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=all-product.css.map */
