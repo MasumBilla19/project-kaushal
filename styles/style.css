@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-@use "./other/" as *;
-@use "./util/" as *;
-@use "./pages/" as *;
-/*# sourceMappingURL=style.css.map */
-=======
 @font-face {
   font-family: "GT America Extended";
   src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
@@ -895,6 +889,31 @@ body {
     width: 18.75rem;
   }
 }
+#main_area #about .about_inner_right .main_image_inner {
+  display: block;
+  max-height: 31.25rem;
+  width: 13.6875rem;
+  position: absolute;
+  left: 10.25rem;
+  top: 1rem;
+  -webkit-animation-name: eJMQKr;
+          animation-name: eJMQKr;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 576px) {
+  #main_area #about .about_inner_right .main_image_inner {
+    width: 10.25rem;
+    left: 7.75rem;
+    top: 0.75rem;
+  }
+}
 @media screen and (max-width: 768px) {
   #main_area #about .about_inner_right {
     height: auto;
@@ -1365,4 +1384,3 @@ body {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
->>>>>>> 208fcfccb83421bbd4f1ed98e5906277f6227e1f
