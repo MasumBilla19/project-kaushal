@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "GT America Extended";
+  src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "GT America Extended";
 }
 
 #topbar {
