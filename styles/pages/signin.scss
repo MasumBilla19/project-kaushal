@@ -5,6 +5,775 @@ $blue: #2960AF;
     padding: 0;
 }
 
+#topbar {
+    position: sticky;
+    top: 0px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 3;
+
+    .header {
+        border-bottom: 0.0625rem solid rgb(215, 215, 215);
+    }
+
+    // header area
+    .header_area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px auto;
+        padding: 0.75rem 2rem;
+
+        .toggle_nav {
+            display: none;
+            .toggle_nav_button {
+                background: transparent;
+                border: 0px;
+                padding: 0px;
+                font-size: 1rem;
+                
+                font-weight: bold;
+                cursor: pointer;
+                margin-right: 0.75rem;
+                svg {
+                    font-size: 1rem;
+                    
+                    font-weight: bold;
+                    color: rgb(38, 38, 38);
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    cursor: pointer;
+                }
+            }
+
+            #sidebar_area {
+                transform: translate3d(0%, 0px, 0px);
+                box-shadow: rgb(0 0 0 / 20%) 8px 0px 48px;
+                position: fixed;
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                
+                justify-content: space-between;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                z-index: 3;
+                width: 21.5rem;
+                overflow: hidden;
+                background: rgb(255, 255, 255);
+                color: rgb(38, 38, 38);
+                .sidebar_inner {
+                    padding: 1.5rem 0px 7.75rem;
+                    overflow-y: auto;
+                    width: 100%;
+                    .sidebar_social_area {
+                        display: flex;
+                        margin: 0px 1.5rem;
+                        
+                        justify-content: space-between;
+                    
+                        .social_icon {
+                            margin-right: auto;
+                            display: flex;
+                            align-items: center;
+                            .social_link {
+                                margin-right: 0.75rem;
+                                line-height: 0.75;
+                            } 
+                        }
+
+                        .close_btn {
+                            display: block;
+                            width: 1.875rem;
+                            height: 1.875rem;
+                            padding: 0.125rem;
+                            background: transparent;
+                            border: 0px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .sidebar_nav {
+                        padding: 1rem 0px 0.5rem;
+                        margin: 0px 1.5rem;
+                        border-bottom: 0.0625rem solid rgb(215, 215, 215);
+                        padding-top: 1.5rem;
+
+                        ul {
+                            list-style: none;
+                            padding: 0px;
+                            .sidebar_item {
+                                margin-bottom: 1rem;
+                                display: block;
+                                cursor: pointer;
+                                .sidebar_link{
+                                    color: rgb(38, 38, 38);
+                                    text-decoration: none;
+                                    
+                                    font-weight: bold;
+                                    font-size: 1.125rem;
+                                    line-height: 1.5;
+                                    margin: 0px;
+                                }
+                            }
+                        }
+                    }
+
+                    .sidebar_navbar {
+                        padding: 1rem 0px 0.5rem;
+                        margin: 0px 1.5rem;
+                        border-bottom: none;
+                        .side_navbar_title {
+                            letter-spacing: 0.0075rem;
+                            margin-bottom: 0.5rem;
+                            
+                            font-weight: bold;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            margin: 0px;
+                            color: rgb(38, 38, 38);
+                        }
+                        .side_navbar_wrapper1 {
+                            list-style: none;
+                            padding: 0px;
+                            .side_navbar_item {
+                                border-bottom: 0.0625rem solid rgb(238, 238, 238);
+                                .side_nabvar_btn {
+                                    letter-spacing: 0.0075rem;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    
+                                    align-items: center;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    padding: 0.75rem 0px;
+                                    background: none;
+                                    border: none;
+                                    text-align: left;
+                                    
+                                    font-weight: normal;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5;
+                                    margin: 0px;
+                                    color: rgb(38, 38, 38);
+                                    .side_navbar_arrow {
+                                        line-height: 0.7;
+                                        margin-left: 0.75rem;
+                                        letter-spacing: 0.0075rem;
+                                    }
+                                }
+                            }
+                        }
+                        .side_navbar_wrapper2 {
+                            list-style: none;
+                            padding: 0px;
+                            .side_navbar_item {
+                                border-bottom: 0.0625rem solid rgb(238, 238, 238);
+                                .side_nabvar_btn {
+                                    letter-spacing: 0.0075rem;
+                                    display: flex;
+                                    
+                                    justify-content: space-between;
+                                    
+                                    align-items: center;
+                                    width: 100%;
+                                    cursor: pointer;
+                                    padding: 0.75rem 0px;
+                                    background: none;
+                                    border: none;
+                                    text-align: left;
+                                    
+                                    font-weight: normal;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5;
+                                    margin: 0px;
+                                    color: rgb(38, 38, 38);
+                                    .side_navbar_arrow {
+                                        line-height: 0.7;
+                                        margin-left: 0.75rem;
+                                        letter-spacing: 0.0075rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .footer_nav {
+                        padding: 1rem 0px 0;
+                        margin: 0px 1.5rem;
+                        border-bottom: 0.0625rem solid rgb(215, 215, 215);
+                        .footer_nav_title {
+                            letter-spacing: 0.0075rem;
+                            margin-bottom: 0.5rem;
+                            
+                            font-weight: bold;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            margin: 0px;
+                            color: rgb(38, 38, 38);
+                        }
+                        .footer_nav_inner {
+                                list-style: none;
+                                padding: 0px;
+                                column-count: 2;
+                                column-gap: 1.5rem;
+                                margin-top: 1rem;
+                                .footer_nav_item{
+                                    cursor: pointer;
+                                    margin-bottom: 1rem;
+                                    vertical-align: top;
+                                    width: 100%;
+                                    
+                                    font-weight: normal;
+                                    font-size: 0.75rem;
+                                    line-height: 1.5;
+                                    color: rgb(116, 116, 116);
+                                    .footer_nav_link {
+                                        color: rgb(38, 38, 38);
+                                        text-decoration: none;
+                                        
+                                        font-weight: normal;
+                                        margin: 0px;
+                                        font-size: 0.75rem;
+                                        line-height: 1.5;
+                                    }
+                                }
+                        }
+                    }
+
+                    .select_wrapper {
+                        padding: 1.5rem 1.5rem 0.5rem;
+                        z-index: 20;
+                        .language_area {
+                            margin-bottom: 1rem;
+                            .language_inner {
+                                position: relative;
+                                line-height: 2.5rem;
+                                .language_title {
+                                    position: absolute;
+                                    color: rgb(175, 175, 175);
+                                    cursor: text;
+                                    font-family: "GT America Extended Regular", "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                                    font-size: 0.875rem;
+                                    left: 0.5rem;
+                                    pointer-events: none;
+                                    -webkit-transform-origin-x: 0px;
+                                    transition: all 0.2s ease-in-out 0s;
+                                    transform: translate3d(0px, -0.5rem, 0px) scale(0.7);
+                                }
+
+                                .language_wrapper {
+                                    position: relative;
+                                    line-height: 2.5rem;
+                                    .language_info {
+                                        height: 3rem;
+                                        font-size: 1rem;
+                                        border-radius: 0.125rem;
+                                        display: block;
+                                        width: 100%;
+                                        margin-bottom: 0.5rem;
+                                        padding: 0.625rem 0.5rem 0px;
+                                        font-family: "GT America Extended Regular", "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                                        border: 0.0625rem solid rgb(38, 38, 38);
+                                        appearance: none;
+                                        background: transparent;
+                                        cursor: pointer;
+                                    }
+                                    .down_arrow {
+                                        position: absolute;
+                                        width: 1.25rem;
+                                        right: 0.625rem;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        .down_arrow_inner {
+                                            padding: calc(0.25rem);
+                                            position: relative;
+                                            width: 1.375rem;
+                                            height: 1.375rem;
+                                            min-width: 1.375rem;
+                                            min-height: 1.375rem;
+                                            display: flex;
+                                            svg {
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                fill: inherit;
+                                                min-width: 100%;
+                                                min-height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .country_area {
+                            position: relative;
+                            line-height: 2.5rem;
+                            .county_title {
+                                position: absolute;
+                                color: rgb(175, 175, 175);
+                                cursor: text;
+                                font-family: "GT America Extended Regular", "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                                font-size: 0.875rem;
+                                left: 0.5rem;
+                                pointer-events: none;
+                                -webkit-transform-origin-x: 0px;
+                                transition: all 0.2s ease-in-out 0s;
+                                transform: translate3d(0px, -0.5rem, 0px) scale(0.7);
+                            }
+
+                            .country_wrapper {
+                                position: relative;
+                                line-height: 2.5rem;
+                                .country_info {
+                                    font-size: 1rem;
+                                    border-radius: 0.125rem;
+                                    display: block;
+                                    width: 100%;
+                                    margin-bottom: 0.5rem;
+                                    padding: 0.625rem 0.5rem 0px;
+                                    font-size: 0.875rem;
+                                    font-family: "GT America Extended Regular", "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                                    border: 0.0625rem solid rgb(38, 38, 38);
+                                    appearance: none;
+                                    background: transparent;
+                                    cursor: pointer;
+                                }
+
+                                .down_arrow {
+                                    position: absolute;
+                                    width: 1.25rem;
+                                    right: 0.625rem;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    .down_arrow_inner {
+                                        padding: calc(0.25rem);
+                                        position: relative;
+                                        width: 1.375rem;
+                                        height: 1.375rem;
+                                        min-width: 1.375rem;
+                                        min-height: 1.375rem;
+                                        display: flex;
+                                        svg {
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            fill: inherit;
+                                            min-width: 100%;
+                                            min-height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 768px){
+            .toggle_nav {
+                display: block;
+                min-width: 0px;
+            }
+        }
+         @media screen and (max-width: 576px) {
+            .toggle_nav {
+                display: block;
+            }
+        }
+
+        .company_logo {
+            .logo_info {
+                width: 5.625rem;
+                height: 1.4375rem;
+                display: block;
+                fill: rgb(255, 35, 0);
+            }
+        }
+
+        .search_area {
+            .search_wrapper {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .search_form {
+                    width: 44rem;
+                    position: relative;
+                    margin: auto;
+                    display: flex;
+                    background-color: rgb(255, 255, 255);
+                    span {
+                        width: 1.5rem;
+                        position: absolute;
+                        top: 0.5rem;
+                        left: 0.5rem;
+                        color: rgb(102, 102, 102);
+                    }
+                    .search_input {
+                        padding: 0px 0.5rem 0px 2.5rem;
+                        height: 2.5rem;
+                        border-radius: 0.25rem;
+                        margin: 0px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        border: 0.0625rem solid rgb(175, 175, 175);
+                        width: 100%;
+                        
+                        box-shadow: none;
+                        appearance: none;
+
+                        &:focus-visible {
+                            .search_suggestions {
+                                display: block;
+                            }
+                        }
+                    }
+                    .search_icon {
+                        position: absolute;
+                        top: 0.5rem;
+                        left: 0.5rem;
+                        color: rgb(102, 102, 102);
+                        width: 1.5rem;
+                    }
+                    .search_suggestions{
+                        display: none;
+                        box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px 0px;
+                        border-radius: 2px;
+                        position: absolute;
+                        top: 3rem;
+                        left: 0px;
+                        background-color: rgb(255, 255, 255);
+                        width: 100%;
+                        z-index: 1;
+
+                        .search_tag {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 0.5rem;
+                            margin-bottom: 1rem;
+                            .search_tag_info {
+                                display: block;
+                                font-size: 0.75rem;
+                                color: rgb(116, 116, 116);
+                                
+                            }
+                        }
+
+                        .search_value {
+                            list-style: none;
+                            margin-bottom: 0;
+                            padding-left: 0;
+                            li {
+                                .search_value_wrapper {
+                                    padding: 0.5rem;
+                                    width: 100%;
+                                    text-align: left;
+                                    
+                                    font-size: 0.875rem;
+                                    p{
+                                        margin-bottom: 0;
+                                    }
+                                    &:hover {
+                                        background-color: rgb(61, 55, 189);
+                                        color: rgb(255, 255, 255);
+                                        outline: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 768px){
+            .search_area {
+                display: none;
+            }
+        }
+         @media screen and (max-width: 576px) {
+            .search_area {
+                display: none;
+            }
+        }
+
+        .main_navigation {
+            display: flex;
+            align-items: center;
+            height: 2rem;
+            .navigation_wrapper {
+                padding-left: 0px;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                .navigation_item {
+                    margin-left: 1.5rem;
+                    list-style: none;
+                    display: inline-block;
+                    cursor: pointer;
+
+                    .navigation_link {
+                        text-decoration: none;
+                        color: rgb(38, 38, 38);
+                        line-height: 1;
+                        
+                        font-weight: bold;
+                        font-size: 1rem;
+                        margin: 0px;
+                        transition: .3s all ease;
+                        .love_icon {
+                            padding: 0px;
+                            margin-top: 0.125rem;
+                            color: rgb(38, 38, 38);
+                            position: relative;
+                            width: 1.75rem;
+                            height: 1.75rem;
+                            min-width: 1.75rem;
+                            min-height: 1.75rem;
+                            display: flex;
+                            svg {
+                                width: 100%;
+                                height: 100%;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                        }
+
+                        &:last-of-type {
+                            &:hover {
+                                color: rgb(116, 116, 116);
+                            }
+                        }
+                    }
+                    @media screen and (max-width: 768px){
+                        .login_btn {
+                            display: none;
+                        }
+                    }
+                     @media screen and (max-width: 576px) {
+                        .login_btn {
+                            display: none;
+                        }
+                    }
+
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
+
+                    .signUp_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.25rem 1rem;
+                        border-radius: 0.125rem;
+                        background-color: rgb(38, 38, 38);
+                        color: rgb(255, 255, 255);
+                        cursor: pointer;
+                        border-color: rgb(38, 38, 38);
+                        border-width: 0.125rem;
+                        border-style: solid;
+                        text-decoration: none;
+                        transition: all 0.2s ease 0s;
+
+                        &:hover {
+                            background-color: rgb(116, 116, 116);
+                            border-color: rgb(116, 116, 116);
+                        }
+
+                        .btn_info {
+                            font-size: 0.875rem;
+                            line-height: 1.5;
+                            margin: 0px;
+                            font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                            font-weight: bold;
+                            pointer-events: none;
+                            color: inherit;
+                        }
+                    }
+                }
+
+                .search_wrapper {
+                    list-style: none;
+                    display: inline-block;
+                    cursor: pointer;
+                    .search_btn {
+                        font-size: 1rem;
+                        
+                        font-weight: normal;
+                        padding: 0px;
+                        line-height: 1.25;
+                        display: none;
+                        margin: auto 0px;
+                        color: rgb(38, 38, 38);
+                        background: transparent;
+                        border: none;
+                        text-decoration: underline;
+                        .search_icon {
+                            color: rgb(116, 116, 116);
+                            margin-top: 0.375rem;
+                            width: 1.6875rem;
+                            height: 1.6875rem;
+                            cursor: pointer;
+                        }
+                    }
+                    @media screen and (max-width: 768px){
+                        .search_btn {
+                            display: inline-flex;
+                        }
+                    }
+                     @media screen and (max-width: 576px) {
+                        .search_btn {
+                            display: inline-flex;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 576px) {
+                .navigation_wrapper {
+                    margin-right: -16px;
+                }
+            }
+        }
+         @media screen and (max-width: 576px) {
+            .main_navigation {
+                margin: 0px 0px 0px auto;
+            }
+        }
+    }
+     @media screen and (max-width: 576px) {
+        .header_area {
+            padding: 0.75rem 0;    
+        }
+    }
+
+
+    // navbar section 
+    .navbar {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        margin: 0px auto;
+        padding: 0px 1rem;
+        border-bottom: 0.0625rem solid rgb(238, 238, 238);
+        .nav_menu {
+            list-style: none;
+            margin: 0px 0px -0.0625rem;
+            padding: 0px;
+            display: flex;
+            justify-content: start;
+            .nav_item {
+                position: relative;
+                list-style: none;
+                
+                font-weight: normal;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                margin: 0px;
+                color: rgb(38, 38, 38);
+                button {
+                    padding: 0.75rem 1rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    border: none;
+                    background: none;
+                    
+                    font-weight: bold;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin: 0px;
+                    color: rgb(38, 38, 38);
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                        background-color: rgb(38, 38, 38);
+                    }
+                }
+                .nav_dropdown {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    padding-top: 0.1875rem;
+                    left: auto;
+                    background: rgb(255, 255, 255);
+                    border: 0.0625rem solid rgb(204, 204, 204);
+                    border-radius: 0.125rem;
+                    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.75rem 0.25rem;
+                    .popular {
+                        display: block;
+                        color: rgb(102, 102, 102);
+                        padding: 0.75rem 1rem 0.25rem;
+                        font-size: 0.625rem;
+                        background-color: rgb(255, 255, 255);
+                        list-style: none;
+                        
+                        font-weight: normal;
+                        font-size: 0.875rem;
+                        line-height: 1.5;
+                    }
+                    .drop_menu {
+                        list-style: none;
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 0.875rem;
+                        min-width: 16.875rem;
+                        .drop_item {
+                            border-bottom: 0.0625rem solid rgb(238, 238, 238);
+                            position: relative;
+                            list-style: none;
+                            
+                            font-weight: normal;
+                            font-size: 0.875rem;
+                            line-height: 1.5;
+                            margin: 0px;
+                            color: rgb(38, 38, 38);
+                            .drop_link {
+                                border-top-left-radius: 0.125rem;
+                                border-top-right-radius: 0.125rem;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: calc(100% + 2px);
+                                padding: 0.75rem 1rem;
+                                margin: -0.0625rem;
+                                text-decoration: none;
+                                
+                                font-weight: normal;
+                                font-size: 0.875rem;
+                                line-height: 1.5;
+                                color: rgb(38, 38, 38);
+                                &:hover {
+                                    color: rgb(238, 238, 238);
+                                    background-color: rgb(38, 38, 38);
+                                }
+                            }
+                            &:last-of-type {
+                                border-bottom: rgb(38, 38, 38);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .nav_dropdown {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .navbar {
+            display: none;
+        }
+    }
+     @media screen and (max-width: 576px) {
+        .navbar {
+            display: none;
+        }
+    }
+
+}
+
 .sign-in{
     .the-form{
         max-width: 420px;
@@ -62,5 +831,133 @@ $blue: #2960AF;
             font-size: 18px;
             font-weight: 700;
         }
+    }
+}
+
+#footer_area {
+    position: fixed;
+    z-index: 2;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem 0px;
+    border-top: 0.0625rem solid rgb(215, 215, 215);
+
+    .footer_navigation {
+        .secondary_navigation {
+            margin-bottom: 0;
+            padding-left: 0;
+            .navigation_item {
+                margin-right: 1rem;
+                list-style: none;
+                display: inline-block;
+                
+                // font-weight: normal;
+                // font-size: 0.875rem;
+                // line-height: 1.5;
+                color: rgb(38, 38, 38);
+                .navigation_link {
+                    color: rgb(38, 38, 38);
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_social {
+            display: flex;
+            margin-left: auto;
+            justify-content: end;
+            flex-shrink: 0;
+            .social_icon {
+                .social_item {
+                    margin-left: 0.5rem;
+                    display: inline-block;
+                    color: rgb(0, 0, 0);
+                    span {
+                        display: block;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+
+            .location_area {
+                display: flex;
+                margin-left: 1rem;
+                .language {
+                    position: relative;
+                    border-radius: 0.125rem;
+                    border: 0.0625rem solid rgb(102, 102, 102);
+                    select {
+                        margin: 0px;
+                        font-family: "GT America Extended";
+                        appearance: none;
+                        font-size: 0.875rem;
+                        color: rgb(0, 0, 0);
+                        border: 0px;
+                        box-shadow: none;
+                        line-height: 1.125rem;
+                        background-color: transparent;
+                        width: 100%;
+                        padding: 0.25rem 1.875rem 0.25rem 0.25rem;
+                    }
+
+                    svg {
+                        position: absolute;
+                        right: 0.5rem;
+                        top: 50%;
+                        margin-top: -0.5rem;
+                        width: 1rem;
+                        height: 1rem;
+                        z-index: -1;
+                    }
+                }
+
+                .country_wrapper {
+                    margin-left: 0.5rem;
+                    .country {
+                        position: relative;
+                        border-radius: 0.125rem;
+                        border: 0.0625rem solid rgb(102, 102, 102);
+                        select {
+                            margin: 0px;
+                            font-family: "GT America Extended";
+                            appearance: none;
+                            font-size: 0.875rem;
+                            color: rgb(0, 0, 0);
+                            border: 0px;
+                            box-shadow: none;
+                            line-height: 1.125rem;
+                            background-color: transparent;
+                            width: 100%;
+                            padding: 0.25rem 1.875rem 0.25rem 0.25rem;
+                        
+                        }
+
+                        svg {
+                            position: absolute;
+                            right: 0.5rem;
+                            top: 50%;
+                            margin-top: -0.5rem;
+                            width: 1rem;
+                            height: 1rem;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+}
+@media screen and (max-width: 768px){
+    #footer_area {
+        display: none;
+    }
+}
+ @media screen and (max-width: 576px) {
+    #footer_area {
+        display: none;
     }
 }
