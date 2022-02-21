@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+@use "./other/" as *;
+@use "./util/" as *;
+@use "./pages/" as *;
+/*# sourceMappingURL=style.css.map */
+=======
 @font-face {
   font-family: "GT America Extended";
   src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
@@ -1359,3 +1365,4 @@ body {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
+>>>>>>> 208fcfccb83421bbd4f1ed98e5906277f6227e1f
