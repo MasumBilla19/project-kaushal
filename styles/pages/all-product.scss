@@ -1,9 +1,15 @@
 $theme-color: rgb(34, 34, 34);
+@font-face {
+    font-family: "GT America Extended";
+    src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
+}
 *{
     margin: 0;
     padding: 0;
 }
-
+body {
+    font-family: "GT America Extended";
+}
 
 #topbar {
     position: sticky;
@@ -46,7 +52,7 @@ $theme-color: rgb(34, 34, 34);
                 }
             }
 
-            .sidebar_area {
+            #sidebar_area {
                 transform: translate3d(0%, 0px, 0px);
                 box-shadow: rgb(0 0 0 / 20%) 8px 0px 48px;
                 position: fixed;
@@ -631,7 +637,11 @@ $theme-color: rgb(34, 34, 34);
                     }
                 }
             }
-            
+            @media screen and (max-width: 576px) {
+                .navigation_wrapper {
+                    margin-right: -16px;
+                }
+            }
         }
          @media screen and (max-width: 576px) {
             .main_navigation {

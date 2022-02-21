@@ -1,10 +1,10 @@
 @use "../util" as *;
-*{
-    @font-face {
-        font-family: "GT America Extended", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-        src: url(../../assets/fonts/GT\ America\ Extended\ Regular.ttf);
-    }
+
+body {
+    font-family: "GT America Extended";
+    // font-family: "GT America Expanded", "Arial Black",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', Arial, sans-serif;
 }
+
 #topbar {
     position: sticky;
     top: 0px;
@@ -46,7 +46,7 @@
                 }
             }
 
-            .sidebar_area {
+            #sidebar_area {
                 transform: translate3d(0%, 0px, 0px);
                 box-shadow: rgb(0 0 0 / 20%) 8px 0px 48px;
                 position: fixed;
@@ -587,7 +587,7 @@
                             font-size: 0.875rem;
                             line-height: 1.5;
                             margin: 0px;
-                            font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                            
                             font-weight: bold;
                             pointer-events: none;
                             color: inherit;
@@ -631,7 +631,11 @@
                     }
                 }
             }
-            
+            @include sm {
+                .navigation_wrapper {
+                    margin-right: -16px;
+                }
+            }
         }
         @include sm {
             .main_navigation {
@@ -806,7 +810,7 @@
             padding: 8rem 0px;
             .hero_title {
                 text-transform: uppercase;
-                font-family: "GT America Expanded", "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                
                 font-weight: bold;
                 font-size: 2rem;
                 line-height: 1.5; 
@@ -923,6 +927,28 @@
                 .main_img {
                     height: 25rem;
                     width: 18.75rem;
+                }
+            }
+            .main_image_inner {
+                display: block;
+                max-height: 31.25rem;
+                width: 13.6875rem;
+                position: absolute;
+                left: 10.25rem;
+                top: 1rem;
+                animation-name: eJMQKr;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+                opacity: 1;
+                transition: opacity 0.5s ease 0s;
+                max-width: 100%;
+                height: auto;
+            }
+            @include sm {
+                .main_image_inner {
+                    width: 10.25rem;
+                    left: 7.75rem;
+                    top: 0.75rem;
                 }
             }
         }
