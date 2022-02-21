@@ -625,6 +625,11 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  #topbar .header_area .main_navigation .navigation_wrapper {
+    margin-right: -16px;
+  }
+}
+@media screen and (max-width: 576px) {
   #topbar .header_area .main_navigation {
     margin: 0px 0px 0px auto;
   }
