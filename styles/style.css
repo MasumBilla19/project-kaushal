@@ -1,7 +1,8 @@
-@font-face {
-  font-family: "GT America Extended";
-  src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Mukta", sans-serif;
 }
+
 :root {
   --white1: white;
   --black1: black;
@@ -39,10 +40,6 @@
 
 .bg-gray-200 {
   background-color: var(--gray-200);
-}
-
-body {
-  font-family: "GT America Extended";
 }
 
 #topbar {
@@ -1397,10 +1394,6 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "GT America Extended";
-}
-
 @media screen and (max-width: 768px) {
   #all-products #all-products {
     padding: 5px 20px;
@@ -2425,10 +2418,6 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "GT America Extended";
-}
-
 #brand-section {
   padding: 25px 7px;
 }
@@ -2639,6 +2628,36 @@ body {
   background: #3b5998;
   border: none;
   padding: 6px;
+}
+.sign-in .the-form .or {
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #747474;
+}
+.sign-in .the-form .or::after {
+  content: "";
+  height: 0.0625rem;
+  background-color: #d7d7d7;
+  width: calc(50% - 12px);
+  position: absolute;
+  display: block;
+  left: inherit;
+  right: 0;
+  top: calc(50% + 1px);
+}
+.sign-in .the-form .or::before {
+  content: "";
+  height: 0.0625rem;
+  background-color: #d7d7d7;
+  width: calc(50% - 12px);
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: calc(50% + 1px);
 }
 .sign-in .the-form .sign-up {
   padding: 6px 2px 7px 2px;

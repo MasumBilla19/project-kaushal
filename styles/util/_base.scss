@@ -1,7 +1,11 @@
 @use './mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap');
 
-@font-face {
-    font-family: "GT America Extended";
-    src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
+* {
+    font-family: 'Mukta', sans-serif;
 }
+// @font-face {
+//     font-family: "GT America Extended";
+//     src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
+// }
 

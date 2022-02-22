@@ -55,6 +55,37 @@ $blue: #2960AF;
             border: none;
             padding: 6px;
         }
+        .or {
+            margin: 1.5rem 0;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: rgb(116, 116, 116);
+            &::after {
+                content: "";
+                height: 0.0625rem;
+                background-color: rgb(215, 215, 215);
+                width: calc(50% - 12px);
+                position: absolute;
+                display: block;
+                left: inherit;
+                right: 0;
+                top: calc(50% + 1px);
+            }
+
+            &::before {
+                content: "";
+                height: 0.0625rem;
+                background-color: rgb(215, 215, 215);
+                width: calc(50% - 12px);
+                position: absolute;
+                display: block;
+                left: 0px;
+                top: calc(50% + 1px);
+            }
+        }
         .sign-up{
             padding: 6px 2px 7px 2px;
             color: $theme-color;
