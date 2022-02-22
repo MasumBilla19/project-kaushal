@@ -1,8 +1,7 @@
+@use "../util" as *;
+
 $theme-color: rgb(34, 34, 34);
-@font-face {
-    font-family: "GT America Extended";
-    src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
-}
+
 $blue: #2960AF;
 *{
     margin: 0;

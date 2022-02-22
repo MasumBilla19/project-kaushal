@@ -1392,10 +1392,6 @@ body {
     display: none;
   }
 }
-@font-face {
-  font-family: "GT America Extended";
-  src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
-}
 * {
   margin: 0;
   padding: 0;
@@ -1405,8 +1401,8 @@ body {
   font-family: "GT America Extended";
 }
 
-@media screen and (min-width: 767px) {
-  #all-products {
+@media screen and (max-width: 768px) {
+  #all-products #all-products {
     padding: 5px 20px;
   }
 }
@@ -2407,10 +2403,6 @@ body {
   }
 }
 
-@font-face {
-  font-family: "GT America Extended";
-  src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
-}
 * {
   margin: 0;
   padding: 0;
@@ -2569,7 +2561,7 @@ body {
   margin: auto;
   margin-top: 70px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .sign-in .the-form {
     width: 100%;
   }
@@ -2640,7 +2632,7 @@ body {
   background-position: center center;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .sign-up-section .sign-up .left-side {
     display: none;
     background: #000;
@@ -2657,7 +2649,7 @@ body {
   margin: auto;
   margin-top: 140px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .sign-up-section .sign-up .right-side {
     width: 100%;
   }

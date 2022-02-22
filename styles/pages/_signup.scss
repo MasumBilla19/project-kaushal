@@ -1,3 +1,5 @@
+@use "../util" as *;
+
 $theme-color: rgb(38, 38, 38);
 $blue: #2960AF;
 *{
@@ -15,7 +17,7 @@ $blue: #2960AF;
             background-repeat: no-repeat;
             background-position: center center;
             position: relative;
-            @media screen and (max-width: 767px){
+            @include md {
                 display: none;
                 background: #000;
             }
@@ -30,7 +32,7 @@ $blue: #2960AF;
             max-width: 368px;
             margin: auto;
             margin-top: 140px;
-            @media screen and (max-width: 767px){
+            @include md {
                 width: 100%;
             }
             .title{

@@ -1,10 +1,7 @@
+@use "../util" as *;
 
 $theme-color: rgb(34, 34, 34);
 
-@font-face {
-    font-family: "GT America Extended";
-    src: url(../../assets/fonts/GT-America-Extended-Regular.ttf) format("truetype");
-}
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +12,10 @@ body {
 
 
 #all-products{
-    @media screen and (min-width: 767px){
-        padding: 5px 20px;
+    @include md {
+        #all-products {
+            padding: 5px 20px;
+        }
     }
     
     .page-redirected{
