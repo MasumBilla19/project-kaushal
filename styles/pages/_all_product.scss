@@ -77,6 +77,16 @@ body {
         .product{
             width: 24%;
             margin-bottom: 25px;
+            @media screen and (max-width: 920px){
+                width: 31%;
+            }
+            @media screen and (max-width: 767px){
+                width: 48%;
+            }
+            @media screen and (max-width: 420px){
+                width: 100%;
+                justify-content: center;
+            }
             .image{
                 position: relative;
                 transition: all .3s ease;
