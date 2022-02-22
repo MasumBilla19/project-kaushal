@@ -2529,6 +2529,21 @@ body {
   width: 15.75%;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 920px) {
+  #brand-section .products .product {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #brand-section .products .product {
+    width: 31%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #brand-section .products .product {
+    width: 48%;
+  }
+}
 #brand-section .products .product .image {
   position: relative;
   width: 100%;

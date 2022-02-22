@@ -140,6 +140,15 @@ body {
         .product{
             width: 15.75%;
             margin-bottom: 25px;
+            @media screen and (max-width: 920px){
+                width: 24%;
+            }
+            @media screen and (max-width: 767px){
+                width: 31%;
+            }
+            @media screen and (max-width: 420px){
+                width: 48%;
+            }
             .image{
                 position: relative;
                 &:hover .overlay{
