@@ -1463,6 +1463,7 @@ body {
 }
 #all-products .products .product .image {
   position: relative;
+  transition: all 0.3s ease;
   width: 100%;
 }
 #all-products .products .product .image:hover .overlay {
