@@ -1,0 +1,66 @@
+$theme-color: rgb(38, 38, 38);
+$blue: #2960AF;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sign-in{
+    .the-form{
+        max-width: 420px;
+        margin: auto;
+        margin-top: 70px;
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+        .title{
+            h2{
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        form{
+            input{
+                width: 100%;
+                font-size: 15px;
+                padding: 6px 8px;
+                color: #000;
+                margin-bottom: 8px;
+                &::placeholder{
+                    color: #000;
+                }
+                &[type="submit"]{
+                    background: $theme-color;
+                    color: #fff;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            .forgot{
+                display: block;
+                text-align: right;
+                margin-bottom: 16px;
+                color: $theme-color;
+            }
+        }
+        .facebook{
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background: rgb(59, 89, 152);
+            border: none;
+            padding: 6px;
+        }
+        .sign-up{
+            padding: 6px 2px 7px 2px;
+            color: $theme-color;
+            background: none;
+            border: 2px solid $theme-color;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,1 +1,5 @@
-@forward  "./homepage";
+@use "./homepage";
+@use "./all_product";
+@use "./brand";
+@use "./signin";
+@use "./signup";
