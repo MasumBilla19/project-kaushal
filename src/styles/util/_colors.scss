@@ -1,0 +1,21 @@
+$white1: rgb(255, 255, 255);
+$black1: rgb(0, 0, 0);
+$black-200: rgb(38, 38, 38);
+$gray-200: rgb(116, 116, 116);
+:root {
+  --white1: #{$white1};
+  --black1: #{$black1};
+  --black-200: #{$black-200};
+  --gray-200: #{$gray-200};
+}
+
+$all-color: white1, black1, black-200, gray-200;
+
+@each $color in $all-color {
+  .text-#{$color} {
+    color: var(--#{$color});
+  }
+  .bg-#{$color} {
+    background-color: var(--#{$color});
+  }
+}
